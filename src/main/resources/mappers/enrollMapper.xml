@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.dao.EnrollDAO">
+<insert id="insertEmp">
+insert into employees (employee_id,first_name,last_name,email,phone_number,hire_date,
+job_id,salary,commission_pct,manager_id,department_id)
+values (#{employee_id},#{first_name},#{last_name},#{email},#{phone_number},#{hire_date},
+#{job_id},#{salary},#{commission_pct},#{manager_id},#{department_id})
+</insert>
+
+<select id="listEmp" resultType="EnrollDTO">
+select em.employee_id,em.first_name,em.last_name,em.email,em.phone_number,em.hire_date,
+em.job_id,em.salary,em.commission_pct,em.manager_id,em.department_id,dp.department_name from employees em, departments dp 
+where em.department_id = dp.department_id order by em.employee_id asc
+</select>
+
+<select id="listDpt" resultType="EnrollDTO">
+select department_id,department_name from departments
+order by department_id asc
+</select>
+
+<select id="listJobs" resultType="EnrollJobDTO">
+select * from jobs order by job_id asc
+</select>
+
+<select id="readEmp" resultType="EnrollDTO">
+select * from employees where employee_id=#{employee_id}
+</select>
+
+<update id="updateEmp">
+update employees set first_name=#{first_name},last_name=#{last_name},email=#{email},department_id=#{department_id},
+phone_number=#{phone_number},hire_date=#{hire_date},job_id=#{job_id},salary=#{salary},manager_id=#{manager_id} 
+where employee_id=#{employee_id}
+</update>
+
+<update id="updateEmp2">
+update employees set first_name=#{first_name},last_name=#{last_name},email=#{email},hire_date=#{hire_date},
+phone_number=#{phone_number},salary=#{salary},manager_id=#{manager_id} 
+where employee_id=#{employee_id}
+</update>
+
+<delete id="removeEmp">
+delete from employees where employee_id=#{employee_id}
+</delete>
+
+<delete id="removeEmpHistory">
+delete from job_history where employee_id=#{employee_id}
+</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+

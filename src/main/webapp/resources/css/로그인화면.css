@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family:sans-serif;
+  
+  }
+  
+  body {
+    background-color: #34495e;
+  }
+  
+  .loginForm {
+    position:absolute;
+    width:400px;
+    height:500px;
+    padding: 30px, 20px;
+    background-color:#FFFFFF;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+  
+  .loginForm h2{
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .idForm{
+    border: 2px solid #adadad;
+    margin: 40px;
+    padding: 7px 9px;
+    width: 54%;
+    left: 14%;
+    position: relative;
+  }
+  
+  .passForm{
+    border: 2px solid #adadad;
+    margin: 40px;
+    padding: 7px 9px;
+    width: 54%;
+    left: 14%;
+    position: relative;
+  }
+  
+  .id {
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:14px;
+    height: 15px;
+    background: none;
+    width: 100%;
+  }
+  
+  .pw {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:14px;
+    height:15px;
+    background: none;
+  }
+  
+  .btn {
+    position:relative;
+    left:40%;
+    bottom: 35%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    width:80%;
+    height:40px;
+    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+  }
+  
+  .btn:hover {
+    background-position: right;
+  }
+  
+  .bottomText {
+    position: relative;
+    bottom: 32%;
+    text-align: center;
+  }
+
+  .box {
+    border: 2px solid #adadad;
+    font-size:13px;
+    height: 28px;
+    width: 234px;
+    font-size: 14px;
+  }
+
+  .icon {
+    position: relative; 
+    left: 39%; 
+    bottom: 73px;
+  }
+
+  .icon2 {
+    position: relative; 
+    left: 39%;
+    bottom: 164px;
+  }
+
+  button {
+    border: none;
+  }

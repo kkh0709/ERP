@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.dao.DepDao">
+
+
+<select id="listDep" resultType="com.project.dto.DepDto">
+<![CDATA[
+select department_id, department_name,manager_id,location_id from
+(select  
+rownum as rn, department_id, department_name, nvl(manager_id,0) manager_id,nvl(location_id,0) location_id
+from departments where 1=1]]> 
+<include refid="search"/>
+<![CDATA[ and rownum <= #{page} * #{perPageNum}) 
+where rn > (#{page} -1) * #{perPageNum}]]>
+
+
+</select>
+
+
+<sql id='search'>
+	<if test="searchType!=null">
+		<if test="searchType == 'dID'.toString()"> and department_id like '%'|| #{keyword}||'%' </if>
+		<if test="searchType == 'dName'.toString()"> and department_name like '%'|| #{keyword}||'%' </if>
+		<if test="searchType == 'mID'.toString()"> and manager_id like '%'|| #{keyword}||'%' </if>
+		<if test="searchType == 'loID'.toString()"> and location_id like '%'|| #{keyword}||'%' </if>
+		
+		
+	</if>
+</sql>
+
+
+
+<select id="listSearchCount" resultType="int">
+<![CDATA[ select count(rownum) from departments where 1=1 ]]>
+<include refid="search"/>
+<![CDATA[ and rownum > 0 ]]>
+</select>
+
+  
+ 
+<insert id="insertDep">
+insert into departments(department_id,department_name,manager_id,location_id)
+values(#{department_id},#{department_name},#{manager_id},#{location_id})
+</insert>
+
+
+
+<update id="updateDep">
+update departments set department_name=#{department_name}, manager_id=#{manager_id}, 
+location_id=#{location_id} where department_id=#{department_id}
+</update>
+
+<delete id="removeDep">
+delete from departments where department_id=#{department_id}
+</delete>
+
+<select id="listManager" resultType="com.project.dto.managerDto">
+select DISTINCT nvl(manager_id, 0) manager_id from departments order by manager_id
+
+</select>
+
+<select id="listLocation" resultType="com.project.dto.locationDto">
+select DISTINCT nvl(location_id, 0) location_id from departments order by location_id
+
+</select>
+
+<select id="listDepId" resultType="com.project.dto.depIdDto">
+select department_id from departments order by department_id
+
+</select>
+
+<select id="idCheck" resultType="int">
+select count(department_id) from departments where department_id=#{department_id}
+</select>
+
+<select id="nameCheck" resultType="int">
+select count(department_name) from departments where department_name=#{department_name}
+</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+

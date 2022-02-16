@@ -1,0 +1,417 @@
+* {
+	user-select: none;
+}
+
+.init {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 전체 div size */
+#empInfoStatus {
+	position: relative;
+	width: 950px;
+	height: 800px;
+}
+
+/* popup 설정 */
+.pop_up {
+	padding-top: 18%;
+	padding-left: 30%;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+/* main popup */
+.pop_up>div {
+	width: 350px;
+	height: 500px;
+	border: 1px black solid;
+	background-color: #E6E7EC;
+}
+
+/* fail popup */
+#fail {
+	padding-top: 25%;
+	padding-left: 25%;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+#fail>div {
+	width: 500px;
+	height: 200px;
+	border: 2px blue solid;
+	border-radius: 5px 5px;
+	background-color: #E6E7EC;
+	text-align: center;
+	background: linear-gradient(#f4f6fa, #d9e2ea);
+}
+
+#fail>div>div>img {
+	padding: 40px 0px 20px 0px;
+}
+
+/* popup title */
+#pop_up_title {
+	width: 100%;
+	height: 10%;
+	padding: 2% 5%;
+	border: #B6CEE5 1px solid;
+	background-color: #E6E7EC;
+}
+
+#pop_up_title>div {
+	display: inline-block;
+	width: 91%;
+	border-radius: 5px 5px;
+	background: linear-gradient(to right, #0C203C, #CFD3DA)
+}
+
+#pop_up_titleA {
+	vertical-align: -5px;
+	color: #9AD1DE;
+	margin-left: 3%;
+}
+
+.pop_up_titleName {
+	color: white;
+}
+
+#pop_up_close:hover {
+	opacity: 0.3;
+	cursor: pointer;
+}
+/* popup main */
+.pop_up_main {
+	width: 98%;
+	height: 87%;
+	margin-left: 1%;
+	padding: 0% 1% 1% 1%;
+	border: 1px #90949B solid;
+	border-top: none;
+}
+/* popup 검색 */
+.serch {
+	border: #B6CEE5 1px solid;
+	border-radius: 5px 5px;
+	height: 7%;
+	margin-top: 3%;
+}
+
+.serch>select {
+	font-size: small;
+	width: 25%;
+	margin-left: 1%;
+}
+
+.serch>input {
+	font-size: small;
+}
+/* popup btn-area */
+.btn_area {
+	font-size: small;
+	width: 100%;
+	height: 10%;
+	padding: 3% 0% 0% 47%;
+}
+
+.table_area {
+	width: 100%;
+	height: 82%;
+	border: #B6CEE5 2px solid;
+	overflow-y : scroll;
+}
+
+.table_area>table>tbody>tr>td:nth-child(3n+1) {
+	padding-left: 5px;
+}	
+
+/* 제목 div */
+#title {
+	height: 4%;
+	border-bottom: black 1px solid;
+}
+
+#title img {
+	vertical-align: -4px;
+}
+
+#condition_background {
+	background-color: #EEEEEE;
+}
+
+#condition {
+	background-color: #EDF0F5;
+	border: #B6CEE5 1px solid;
+	border-radius: 5px;
+	margin-top: 7px;
+	height: 40px;
+	line-height: 40px;
+	font-size: small;
+}
+
+#condition>div {
+	float: left;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+#condition1, #condition2 {
+	width: 100px;
+}
+/* select 화살표 이미지 변경 */
+#condition2 {
+	background: url('../img/select_arrow.jpg') no-repeat 100% 40%;
+	/* 화살표 모양의 이미지 */
+	color: transparent;
+}
+
+/* select 화살표 이미지 변경 */
+#condition3, #condition4 {
+	width: 150px;
+	background: url('../img/select_arrow.jpg') no-repeat 110% 40%;
+	/* 화살표 모양의 이미지 */
+	color: transparent;
+}
+
+#empcodeSelect {
+	background: url('../img/select_arrow.jpg') no-repeat 100% 40%;
+	/* 화살표 모양의 이미지 */
+	color: transparent;
+}
+
+#condition3>option,#condition2>option{
+	color: black;
+}
+
+#condition img:hover {
+	cursor: pointer;
+}
+
+.vermi {
+	vertical-align: middle;
+}
+
+.main {
+	margin-top: 1%;
+	width: 100%;
+	height: 89%;
+}
+
+#sub_2 {
+	background-color: #EDF0F5;
+	border: #B6CEE5 1px solid;
+	height: 100%;
+	overflow-y : scroll;
+}
+
+#sub_2,.table_area {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+#sub_2::-webkit-scrollbar,.table_area::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+
+#sub_2>form>table {
+	width: 100%;
+	text-align: center;
+}
+
+#sub_2>form>table, .table_area table {
+	/* 테이블 사이 간격 없애는 방법 */
+	border-collapse: collapse;
+	border-bottom: 2px black solid;
+	border-right: 2px black solid;
+}
+
+
+#sub_2>form>table>tbody>tr>td {
+	font-size:small;
+}
+
+.table_area td {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-size: small;
+}
+
+/* table title */
+thead td {
+	border: #B6CEE5 1px solid;
+	color: white;
+	background-color: #3770A0;
+	font-size: 0.8em;
+}
+
+/* table tbody */
+tbody td {
+	border: #B6CEE5 1px solid;
+	font-size: small;
+}
+
+.tenure, .con, .sub_1 {
+	position: relative;
+}
+
+.textselect {
+	border: none;
+	position: absolute;
+	width: 60%;
+	height: 50%;
+	margin-top: 4.2%;
+	background-color: transparent;
+	font-size: small;
+}
+
+#empCode {
+	width: 14%;
+	height: 2.8%;
+	margin-top: 0%;
+}
+
+#con3 {
+	width: 65%;
+	margin-top: 10px;
+}
+
+#con2 {
+	width: 58%;
+}
+
+#con1 {
+	width: 50%;
+	margin-top: 6.4%;
+}
+
+.textselect:focus {
+	outline: none;
+}
+
+[src='img/search.PNG']:hover {
+	border: 3px blue solid;
+	border-radius: 5px 5px;
+}
+
+.dh_name{
+	margin-top : 4px;
+	padding : 3px;
+	border: #B6CEE5 1px solid;
+	border-radius: 5px 5px;
+}
+
+.pop_up_dh,.pop_up_dhdelete,.pop_up_dhupdate{
+	display : none;
+	width : 100%;
+	height : 90%;
+}
+
+.popup_dh_main{
+	margin : 4px;
+	border : 1px black solid;
+	border-top : none;
+	padding : 0px 3px 3px 3px;
+	width : 98%;
+	height : 90%;
+	overflow-x : scroll;
+}
+
+.departmentHistory>tbody>tr>td{
+	width : 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-size: small;
+}
+
+.departmentHistory>thead>tr>td{
+	text-align: center;
+	font-size: small;
+}
+
+.popup_dhinsert_main{
+	border : black 1px solid;
+	border-top : none;
+	height : 420px;
+	margin : 0px 2px 2px;
+}
+
+.departSave{
+	margin : 2px;
+	float : right;
+}
+
+.departDelete{
+	margin : 2px;
+}
+
+.jobTitle,.departmentName{
+	width:40%;
+}
+
+.jobId,.departmentId{
+	width:35%;
+	-webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none; /* 화살표 없애기 */    
+}
+
+.butt,.butto{
+	box-shadow: inset 0px 0px 2px 1px #96c5e0;
+	background: linear-gradient(to bottom, #ffffff 40%, #afc9e0 100%);
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #667b94;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 0.7rem;
+	padding: 0px 10px;
+	text-decoration: none;
+	height: 20px;
+	margin-top: 2px;
+}
+
+.butt:hover,.butto:hover {
+	background: linear-gradient(to bottom, #afc9e0 5%, #ffffff 100%);
+	background-color: #afc9e0;
+}
+
+.butt:active {
+	position: relative;
+	top: 1px;
+}
+
+.butto:active {
+	position : absolute;
+	top: 41px;
+}
+
+.mainTable>thead{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.conSer{
+	position : absolute;
+	width : 7.5%;
+	height : 3%;
+	margin-top : 0.7%;
+	text-align : left;
+}
+
+.conSer>span{
+	position : absolute;
+	margin-top : -29%;
+}

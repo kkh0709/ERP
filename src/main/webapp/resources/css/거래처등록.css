@@ -1,0 +1,139 @@
+#vender{
+    width: 950px;
+    height: 950px;
+    background-color: white;
+    position: relative;
+}
+#venderTop{
+    width: 950px;
+    height: 70px;
+    display: inline-block;
+    background-color: white;
+    border-bottom: 3px solid rgb(0, 0, 128);
+    margin-bottom: 2px;
+}
+#VLtitle{
+    margin: 5px 0px;
+}
+#arrow{
+    height: 20px;
+    margin-bottom: 5px;
+}
+#venderLeft{
+    width: 300px;
+    height: 80%;
+    float: left;
+    background-color: rgb(237, 240, 245);
+    border:2px solid #CED9EA;
+}
+#VLcompany{
+    width: 260px;
+    height: 700px;
+    overflow: scroll;
+    border: 1px solid gray;
+    margin-bottom : 1px;
+}
+#venderLeft tr td{
+    height: 30px;
+}
+#venderRight{
+    width: 628px;
+    height: 80%;
+    margin-left: 20px;
+    float: left;
+    background-color: rgb(237, 240, 245);
+}
+#venderRight tr>td{
+    text-align: right;
+}
+#venderRight tr>td+td{
+    text-align: left;
+} 
+#venderRight a{
+    border: 1px solid black;
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+#venderRight a:visited,#venderRight a:link{
+    color: black;
+}
+#venderLeft table,#venderLeft td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#venderLeft td{
+    font-size: 12px;
+}
+#VRup{
+    height: 458px;
+    font-size: 13px;
+    border:2px solid #CED9EA;
+}
+#VRup table{
+    margin-left: 10px;
+}
+#VRup tr td:first-child{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: bolder;
+}
+#VRup td{
+    height: 40px;
+}
+#VRup2{
+    font-size: 13px;
+    height: 733px;
+    border: 2px solid #CED9EA;
+    display: none;
+}
+#VRup2 tr td{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: bolder;
+}
+#VRup2 td{
+    height: 40px;
+}
+#VRup2 table{
+    margin-left: 25px;
+}
+#VLcompanyTop{
+    position: sticky;
+    top: -2px;
+    background-color: rgb(55, 112, 160);
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+}
+#VLcompany input{
+    width: 100%;
+    border: none;
+}
+#VRtrade{
+    width: 100%;
+    height: 260px;
+    border:2px solid #CED9EA;
+}
+#VRtrade table{
+    margin-left: 40px;
+}
+#VRbutton{
+    background-color: white;
+}
+#VRbutton a{
+    font-size: 15px;
+    font-weight: bolder;
+}
+#VRbutton input{
+    height: 25px;
+    float: right;
+    font-size: 15px;
+}
+#VRwhite{
+    width: 100%;
+    height: 20px;
+    background-color: white ;
+    
+}
+img.searchBtn{
+    height: 18px;
+}

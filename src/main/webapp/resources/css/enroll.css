@@ -1,0 +1,486 @@
+.hr {
+	width: 950px;
+	font-size: 0.7rem;
+	padding-left: 20px;
+	position: relative;
+}
+
+.hr-top, .hr-bot {
+	width: 950px;
+}
+
+.hr-top {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.hr-top>div {
+	display: inline-block;
+}
+
+.hr-top input {
+	font-size: 0.7rem;
+	height: 20px;
+}
+
+.hr-left{
+	display: inline-block;
+}
+
+.hr-left {
+	width: 270px;
+}
+
+.hr-right {
+	display:none;
+	width: 670px;
+	height: 685px;
+	vertical-align: top;
+}
+
+.hr-table {
+	width: 240px;
+}
+.hr-table input{
+	border: 0px;
+}
+td {
+	border: 1px solid rgb(221, 234, 245);
+	text-align: center;
+}
+
+tr {
+	background-color: white;
+}
+
+th {
+	border: 1px solid rgb(221, 234, 245);
+	background-color: rgb(62, 137, 180);
+	color: white;
+	text-align: center;
+}
+
+.hr-personal {
+	width: 670px;
+	height: 260px;
+}
+
+.hr-personal>div {
+	display: inline-block;
+	height: 260px;
+	vertical-align: top;
+}
+
+.hr-address>div {
+	display: inline-block;
+	height: 420px;
+	vertical-align: top;
+}
+
+.hr-job {
+	width: 670px;
+	height: 160px;
+}
+
+.hr-job>div {
+	display: inline-block;
+	height: 160px;
+	vertical-align: top;
+}
+
+.hr-work {
+	width: 670px;
+	height: 360px;
+}
+
+.hr-work>div {
+	display: inline-block;
+	height: 360px;
+	vertical-align: top;
+}
+
+.hr-pay {
+	width: 670px;
+	height: 240px;
+}
+
+.hr-pay>div {
+	display: inline-block;
+	height: 240px;
+	vertical-align: top;
+}
+
+.hr-insurance {
+	width: 670px;
+	height: 140px;
+}
+
+.hr-insurance>div {
+	display: inline-block;
+	height: 140px;
+	vertical-align: top;
+}
+
+.hr-wage {
+	width: 670px;
+	height: 280px;
+}
+
+.hr-wage>div {
+	display: inline-block;
+	height: 280px;
+	vertical-align: top;
+}
+
+.hr-border {
+	border: 1px solid rgb(190, 202, 218);
+	border-radius: 8px;
+	background-color: rgb(243, 245, 249);
+}
+
+.hr-search {
+	padding: 12px 0px 12px 20px;
+	height: 65px;
+}
+
+.hr-tab {
+	height: 25px;
+	position: relative;
+}
+
+.hr-tab>ul {
+	margin: 0;
+	padding: 0;
+	height: 25px;
+}
+
+.hr-tab li {
+	list-style: none;
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	border: 1px solid rgb(190, 202, 218);
+	border-radius: 8px;
+	line-height: 25px;
+	background-color: rgb(237, 240, 243);
+}
+
+.hr-tab a {
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+.hr-sidetab {
+	width: 25px;
+	padding: 5px;
+}
+
+.hr-sidetab>img {
+	width: 15px;
+}
+
+.hr-tab li.active {
+	background-color: rgb(198, 217, 230);
+	font-weight: bold;
+	text-shadow: 1px 1px rgb(160, 171, 180);
+}
+
+.hr-right>div:not(.hr-tab){
+display:none;
+}
+
+.hr-right>div.active {
+	display: block;
+}
+
+.picture {
+	border: 1px solid black;
+	margin: 8px;
+	height: 80%;
+}
+
+.pic_btn, .picdel_btn {
+	width: 90%;
+	margin-left: 8px;
+	border-radius: 5px;
+	background-color: rgb(230, 238, 243);
+	border-color: rgb(192, 212, 214);
+}
+
+.myButton {
+	box-shadow: inset 0px 0px 2px 1px #96c5e0;
+	background: linear-gradient(to bottom, #ffffff 40%, #afc9e0 100%);
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #667b94;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 0.8rem;
+	padding: 0px 10px;
+	text-decoration: none;
+	height: 20px;
+	margin-top: 2px;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #afc9e0 5%, #ffffff 100%);
+	background-color: #afc9e0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.hr-content {
+	padding-left: 20px;
+	line-height: 1;
+	padding-top: 5px;
+}
+
+.hr-content label {
+	width: 100px;
+	text-align: right;
+}
+
+.hr-content input {
+	border-color: rgb(205, 215, 235);
+}
+
+.hr-content select:disabled {
+	border-color: rgb(0, 0, 0);
+}
+
+.hr-personal input {
+	width: 180px;
+	height: 19px;
+}
+
+.hr-personal select {
+	width: 180px;
+}
+
+.hr-address input {
+	width: 350px;
+	height: 19px;
+}
+
+.hr-address select {
+	width: 122px;
+}
+
+#hr-gradeBtn, #hr-leaveBtn, #hr-dayoffBtn, #hr-departmentBtn,
+	#hr-emptypeBtn, #hr-occupationBtn, #hr-paytypeBtn, #hr-rankBtn,
+	#hr-positionBtn, #hr-dutyBtn, #hr-reasonBtn, #hr-EIBtn, #hr-HIBtn,
+	#hr-PPBtn, #hr-NPBtn, #hr-bankBtn, #hr-bankBtn2, #hr-paystepBtn,
+	#hr-accounttypeBtn {
+	border: 2px solid rgb(200, 218, 240);
+	background-image:url('${pageContext.request.contextPath}/resources/img/searchBtn.png');
+	padding: 0;
+	height: 19px;
+	width: 19px;
+	vertical-align: top;
+}
+
+.hr-job input, .hr-job select {
+	width: 120px;
+}
+
+.hr-pay select {
+	width: 140px;
+}
+
+.hr-insurance input, .hr-insurance select {
+	width: 140px;
+}
+
+tabl.activeTable {
+	background-color: rgb(255, 208, 119);
+}
+
+#wage_salary {
+	border: none;
+	background-color: inherit;
+	text-align: center;
+}
+#sawon-submit{
+	box-shadow: inset 0px 0px 2px 1px #96c5e0;
+	background: linear-gradient(to bottom, #ffffff 40%, #afc9e0 100%);
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #667b94;
+	display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 0.8rem;
+	padding: 0px 10px;
+	text-decoration: none;
+	height: 20px;
+	margin-top: 2px;
+	position: absolute;
+	top:0px;
+	right:20px;
+}
+#sawon-submit:hover{
+	background: linear-gradient(to bottom, #afc9e0 5%, #ffffff 100%);
+	background-color: #afc9e0;
+}
+#sawon-submit:active{
+	position: absolute;
+	top:1px;
+	right:20px;
+} 
+        #pop_title {
+            margin: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to right, black, white);
+            padding: 5px;
+            color: white;
+            position: relative;
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        #pop_search {
+            height: 60px;
+            border: 1px solid rgb(190, 202, 218);
+            border-radius: 8px;
+            background-color: rgb(243, 245, 249);
+            margin-left: 5px;
+            padding: 5px 0px 5px 20px;
+        }
+
+        #pop_btn {
+            height: 30px;
+            margin-left: 5px;
+            text-align: right;
+        }
+
+        #pop_tableDiv {
+            border: 1px solid rgb(190, 202, 218);
+            background-color: rgb(243, 245, 249);
+            margin-left: 5px;
+            height: 250px;
+            overflow-y: scroll;
+        }
+        .pop_table{
+            border-spacing: 0px;
+        }
+
+        .pop_table tr {
+            background-color: white;
+            text-align: center;
+        }
+        .pop_table td{
+            border: 1px solid rgb(160, 178, 197);
+        }
+
+        .pop_table th {
+            border: 1px solid rgb(160, 178, 197);
+            background-color: rgb(62, 137, 180);
+            color: white;
+            text-align: center;
+        }
+
+        #close_btn {
+            padding: 0;
+            margin: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('${pageContext.request.contextPath}/resources/img/x.png');
+            position: absolute;
+            top: 5px;
+            left: 270px;
+        }
+        #close_btn2 {
+            padding: 0;
+            margin: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('${pageContext.request.contextPath}/resources/img/x.png');
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .pop_myButton {
+            box-shadow: inset 0px 0px 2px 1px #96c5e0;
+            background: linear-gradient(to bottom, #ffffff 40%, #afc9e0 100%);
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #667b94;
+            display: inline-block;
+            cursor: pointer;
+            color: #000000;
+            font-family: Arial;
+            font-size: 0.8rem;
+            padding: 4px 20px;
+            text-decoration: none;
+            height: 25px;
+            margin-top: 2px;
+        }
+
+        .pop_myButton:hover {
+            background: linear-gradient(to bottom, #afc9e0 5%, #ffffff 100%);
+            background-color: #afc9e0;
+        }
+
+        .pop_myButton:active {
+            position: relative;
+            top: 1px;
+        }
+        .pop_table tr.activated{
+            background-color: rgb(255, 208, 119);
+        }
+        #popup_background1,#popup_background2,
+        #popup_background3,#popup_background4{
+        	width:100%;
+        	height:100%;
+        	position: absolute;
+        	top: 0px;
+        	left: 0px;
+        	background-color: rgba(0, 0, 0, 0.5);
+        	z-index: 1;
+        	display: none;
+        }
+        #department_popup,#pop_job {
+            margin-top: 15%;
+            margin-left: 30%;
+            font-size: 0.8rem;
+            width: 300px;
+            background: white;
+            z-index: 3;   
+            display: none;   
+        }
+        #insert_employee,#delete_employee{
+        	margin-top: 15%;
+            margin-left: 30%;
+        	width: 400px;
+        	height: 360px;
+        	background: white;
+            z-index: 3;        
+        }
+        #pop_search2 {
+            height: 300px;
+            border: 1px solid rgb(190, 202, 218);
+            border-radius: 8px;
+            background-color: rgb(243, 245, 249);
+            margin-left: 5px;
+            padding: 5px 0px 5px 20px;
+        }
+        #delete_employee table{
+        	width: 320px;
+        }
+        #delete_searchtable{
+        	width: 350px;
+        	height: 250px;
+        	backgroud-color :white;
+        	border: 1px solid black;
+        	overflow-y: scroll; 
+        }

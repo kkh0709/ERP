@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    margin: auto;
+    width: 270px;
+    height: 420px;
+    border: solid 1px #34495e;
+}
+.main2{
+    clear: both;
+}
+
+#header{
+    height: 40px;
+    font-weight: 600;
+    border: solid 1px #d5d8de;
+    background: linear-gradient(125deg,#d7dae1,#d5d8de);
+}
+#header_main{
+    margin: 5px 0 5px 7px;
+    height: 30px;
+    width: 235px;
+    background: linear-gradient(125deg,#0c203c,#3a4452,#d5d8de);
+    border-radius: 9px;
+}
+#header_main2{
+    position: relative;
+    padding: 4px 0 0 10px;
+    color: white;
+    font-size: 13px;
+}
+
+#middle{
+    height: 400px;
+}
+#middle_top{
+    margin: 3px 0 0 3px; 
+    height: 63px;
+    width: 262px;
+    font-size: 13px;
+    border: solid 1px #bdcfdc;
+    border-radius: 5px;
+    background-color: #eef1f5;
+}
+#select_box{
+    margin: 10px 0 0 7px;
+    width: 80px;
+}
+#text_box{
+    width: 160px;
+}
+
+#middle2{
+    margin: 5px 5px 0 0;
+    height: 27px;
+    float: right;
+}
+button {
+    width: 57px;
+    height: 17px;
+    font-size: 11px;
+    background: linear-gradient( #f7f9fc, #c2d9e5);
+    border-radius: 2px;
+    border: #b2cedd 1px solid;
+    cursor: pointer;
+}
+#bottom{
+    margin: -3px 0 0 5px;
+    width: 257px;
+    height: 270px;
+    border: solid 2px #D4DBE3;
+    background-color: #E8ECF1;
+    overflow: scroll;
+}
+.top_label{
+    position: relative;
+    border-collapse: collapse;
+    border: solid 1px #3770a0;
+    background-color: white;
+    width: 255px;
+}
+.top_label th,td{
+    border: solid 1px #D4DBE3;
+}
+.top_label th{
+    background-color: #3770a0;
+    color: white;
+    font-size: 12.5px;
+    height: 25px;
+}
+.top_label tr:hover {
+    background-color: #ffd89a;
+    color: #ba2700;
+}
+
+#th2{
+    width: 60px;
+    
+}
+#th3{
+    width: 162px;
+}
+.td_select{
+    text-align: center;
+}
+.top_label tr{
+    font-size: 11px;
+    height: 25px;
+    font-size: 12.5px;
+}
+
+#use{
+    width: 230px;
+    height: 50px;
+    font-size: 13px;
+    margin: 5px 20px; 
+}

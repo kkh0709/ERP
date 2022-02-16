@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.dao.JobsDAO">
+
+<insert id="insertJobs">
+insert into jobs (job_id,job_title,min_salary,max_salary)
+values (#{job_id},#{job_title},#{min_salary},#{max_salary})
+</insert>
+
+
+
+
+<select id="listJobs" resultType="JobsDTOS">
+select jobs.job_id,jobs.job_title,jobs.min_salary,jobs.max_salary from jobs
+</select>
+
+
+
+
+
+<select id="readJobs" resultType="JobsDTOS">
+select * from jobs where job_id=#{job_id}
+</select>
+
+
+
+<update id="updateJobs">
+update jobs set job_title=#{job_title},min_salary=#{min_salary},
+max_salary=#{max_salary}
+where job_id=#{job_id}
+</update>
+
+
+
+
+<delete id="removeJobs">
+delete from jobs where job_id=#{job_id}
+</delete>
+
+
+
+
+</mapper>
+
+

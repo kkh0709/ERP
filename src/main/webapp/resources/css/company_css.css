@@ -1,0 +1,150 @@
+.company_header{
+    width: 1150px;
+   
+    position: relative;
+    
+}
+.company_header button{
+    font-size:small;
+}
+#insert{
+   position: absolute;
+   float: right;
+
+}
+#delete{
+   margin-left: 50px;          
+   float: right;
+   position: absolute;
+   
+   
+}
+#save{
+   margin-left: 100px;
+   float: right;
+   position: absolute;
+}
+.company_list{
+    margin-top: 40px;
+    width: 240px;
+    height:650px;
+    border: rgb(190, 202, 218) 2px solid;
+    float: left;
+    font-size: small;
+    border-radius: 5px;
+
+}
+#table_header{
+    background-color:#4e73df;
+}
+.table_code{
+    border:black solid 1px ;
+    width: 60px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+.table_name{
+    border: solid black 1px;
+    width: 100px;
+    text-align: center;
+    color:whitesmoke;
+}
+.c_code{
+    width: 60px;
+    text-align: center;
+
+}
+.c_name{
+    width: 100px;
+    text-align: center;
+}
+.c_sep{
+    width: 80px;
+    text-align: center;
+}
+.table_separation{
+    border:black solid 1px ;
+    width: 80px;
+    text-align: center;
+    color:whitesmoke;
+}
+.company_main{
+    margin-top: 40px;
+    margin-left: 30px;
+    width:77%;
+    height: 620px;
+   
+    float: left;
+    position: relative;
+    
+}
+.main_box table{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+   
+
+}
+
+.main_box2 table{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: black;
+}
+
+.main_box{
+    
+    height:625px;
+    z-index: 2;
+    position: absolute;
+    width: 77%;
+    background-color: #F3F5F9;
+    border: rgb(190, 202, 218) 2px solid;
+    font-size: small;
+    border-radius: 5px;
+}
+.main_box input{
+    border-color: rgb(205, 215, 235);
+    font-size: small;
+}
+.main_box2{
+    border: rgb(190, 202, 218) 2px solid;
+    height:625px;
+    position: absolute;
+    z-index: 1;
+    width: 77%;
+    background-color: #F3F5F9;
+    font-size: small;
+    border-radius: 5px;
+}
+.req{
+    background-color:khaki
+}
+.company_main_menu1{
+    border: rgb(190, 202, 218) 2px solid;
+    font-size:small;
+    color: black;
+    border-radius: 5px;
+    background-color: #c6d9e6;
+    font-weight: bold;
+    
+    
+   
+
+}
+.company_main_menu2{
+    border: rgb(190, 202, 218) 2px solid;
+    font-size:small;
+    color: black;
+    border-radius: 5px;
+    
+}
+.company_main_menu1:hover{
+    
+    cursor: pointer;
+}
+.company_main_menu2:hover{
+    
+    cursor: pointer;
+}
